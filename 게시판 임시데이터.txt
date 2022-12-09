@@ -1,0 +1,21 @@
+-- 메인 공지 추가 --
+INSERT INTO BOARD VALUES (B_CODE.NEXTVAL, 1, 1, '[공지] 사회적거리두기에 따른 사업장 운영시간 변경 안내(2022.4.4.~)' ,'사회적거리두기에 따른 사업장 운영시간 변경 안내(2022.4.4.~)', SYSDATE, DEFAULT, 'Y');
+INSERT INTO BOARD VALUES (B_CODE.NEXTVAL, 1, 1, '[공지] 사회적거리두기에 따른 사업장 운영시간 변경 안내(2022.4.12.~)' ,'사회적거리두기에 따른 사업장 운영시간 변경 안내(2022.4.12.~)', SYSDATE, DEFAULT, 'Y');
+INSERT INTO BOARD VALUES (B_CODE.NEXTVAL, 1, 1, '[공지] 사회적거리두기에 따른 사업장 운영시간 변경 안내(2022.4.18.~)' ,'사회적거리두기에 따른 사업장 운영시간 변경 안내(2022.4.18.~)', SYSDATE, DEFAULT, 'Y');
+INSERT INTO BOARD VALUES (B_CODE.NEXTVAL, 1, 1, '[공지] 2022. 7. 5.(화) 홈페이지 서비스 일시 중지 안내' ,'2022. 7. 5.(화) 홈페이지 서비스 일시 중지 안내', SYSDATE, DEFAULT, 'Y');
+INSERT INTO BOARD VALUES (B_CODE.NEXTVAL, 1, 1, '[공지] 보행자 우선도로 시행 알림(7.12.)' ,'보행자 우선도로 시행 알림(7.12.)', SYSDATE, DEFAULT, 'Y');
+INSERT INTO BOARD VALUES (B_CODE.NEXTVAL, 1, 1, '[공지] 2022.9.9. ~ 9.12. 추석연휴기간 사업장 운영 시간 안내 ' ,'2022.9.9. ~ 9.12. 추석연휴기간 사업장 운영 시간 안내 ', SYSDATE, DEFAULT, 'Y');
+
+-- 공지게시판에서 가져오기 --
+SELECT Title FROM BOARD WHERE B_Ccode = 1;
+
+INSERT INTO board VALUES(
+       B_CODE.nextval, 
+       1,
+       2,
+       '파크하얏트 부산',
+       '파크 하얏트 부산은 동북아시아의 무역 중심지 부산에 새로운 럭셔리 호텔의 기준을 제시합니다. 쇼핑과 여가의 중심지 해운대에 위치해 있으며, 세계 최고 수준의 백화점과 부산전시컨벤션센터(BEXCO)가 인접해 부산을 찾는 여행객들에게 편리하고 이상적인 프리미엄 숙박시설을 제공합니다. 수영만 요트경기장에 근접해 있어 시원한 바다 전경, 첨단 시설과 프리미엄 비품들이 비치된 랑하는 이벤트 시설, 스파 트리트먼트 및 피트니스센터를 보유하고 있습니다. 파크 여가의 중심지 해운대에 위치해 있호텔의 기준을 제시합니 해운대에 위치해 있으며, 세계 최고 수준의 백화점과 부산전시컨벤션센터(BEXCO)가 인접해 부산을 찾는 여행객들에게 편리하고 이상적인 프리미엄 숙박시설을 제공합니다.',
+       SYSDATE, 
+       999999,
+       DEFAULT);
+desc board;
